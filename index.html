@@ -5,25 +5,26 @@
 		<title>Jessica Blue | artist</title>
 
 		<!--Favicons-->
-		<link type="image/x-icon" rel="shortcut icon" href="style/images/shortcut-icon.ico">
+		<link type="image/x-icon" rel="shortcut icon" href="./images/shortcut-icon.ico">
 
 		<!--CSS-->
-		<link type="text/css" rel="stylesheet" href="style/css/format.css"/>
+		<link type="text/css" rel="stylesheet" href="./style/css/format.css">
 
 		<!--Fonts-->
 		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Hind">
 
 		<!--JS-->
+		<!--<script src="./javascript/masonry.pkgd.min.js"></script>-->
+		<script src="./javascript/masonry.pkgd.js"></script>
+		<!--<script src="./javascript/Masonry.js"></script>-->
+
 	</head>
 
 	<body>
 		<div id="container">
+
 			<div id="header">
 				<h2>JESSICA BLUE | artist</h2>
-			</div>
-
-			<div id="collage">
-
 			</div>
 
 			<div id="navbar">
@@ -35,10 +36,44 @@
 				</ul>
 			</div>
 
-			<div id="footer">
-				<p>&copy; 2015 by Jessica Blue</p>
+			<!--Masonry.js initializes grid formation of photos-->
+			<div class="grid js-masonry" 
+				data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": 200, "percentPosition": true, "gutter": 10, "isFitWidth": true}'>
+
+				<!--grid items as classes-->
+				<div class="grid-item">
+					<img src="./images/ink-sketches.png" alt="Ink Sketches">
+				</div>
+
+				<div class="grid-item grid-item--width2">
+					<img src="./images/Voyeurism.png" alt="Voyeurism">
+				</div>
+
+				<div class="grid-item grid-item--width2">
+					<img src="./images/poppies.png" alt="Poppies">
+				</div>
+
+				<div class="grid-item grid-item--width2">
+					<img src="./images/Windows.png" alt="Windows">
+				</div>
+
+				<div class="grid-item">
+					<img src="./images/life-collage.png" alt="Life Collage">
+				</div>
+
+				<div class="grid-item grid-item--width2">
+					<img src="./images/union-street-aberdeen.png" alt="Union Street">
+				</div>
+
+				<div class="grid-item">
+					<img src="./images/vertical-madness-logo.png" alt="Vertical Madness">
+				</div>
+
 			</div>
 
+			<div id="footnote">
+				<p>&copy; 2015 by Jessica Blue</p>
+			</div>
 		</div>
 	</body>
 </html>
