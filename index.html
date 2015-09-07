@@ -3,21 +3,14 @@
 	<head>
 		<!--Title-->
 		<title>Jessica Blue | artist</title>
-
 		<!--Favicons-->
 		<link type="image/x-icon" rel="shortcut icon" href="./images/shortcut-icon.ico">
-
 		<!--CSS-->
 		<link type="text/css" rel="stylesheet" href="./style/css/format.css">
-
 		<!--Fonts-->
 		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Hind">
-
 		<!--JS-->
-		<!--<script src="./javascript/masonry.pkgd.min.js"></script>-->
 		<script src="./javascript/masonry.pkgd.js"></script>
-		<!--<script src="./javascript/Masonry.js"></script>-->
-
 	</head>
 
 	<body>
@@ -32,48 +25,107 @@
 					<li>PORTFOLIO</li>
 					<li>ABOUT</li>
 					<li>CONTACT</li>
-					<li>BLOG</li>
 				</ul>
 			</div>
 
-			<!--Masonry.js initializes grid formation of photos-->
+			<!-- Code to change navbar font colour on clock **not currently working -->
+			<script type="text/javascript">
+
+	            $("#navbar li").click( function() { 
+	              $("#navbar li").css("color", "#383838");
+	              $(this).css("color", "##8c8c8c");
+	            });
+
+            </script>
+
+			<!--HMTL initialization of masonry.pkgd.js download for photo collage-->
 			<div class="grid js-masonry" 
 				data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": 200, "percentPosition": true, "gutter": 10, "isFitWidth": true}'>
 
-				<!--grid items as classes-->
+				<!--grid items as classes for collage-->
+				<!--each item includes reference for images and text information for hover-->
 				<div class="grid-item">
+					<div class="info-text">
+						<span>Ink Sketches - 2013<br>---<br>black ink on paper<br>36" x 36"</span>
+					</div>
 					<img src="./images/ink-sketches.png" alt="Ink Sketches">
 				</div>
 
 				<div class="grid-item grid-item--width2">
+					<div class="info-text">
+						<span>Voyeurism - 2013<br>---<br>oil paint on canvas<br>36" x 48"</span>
+					</div>
 					<img src="./images/Voyeurism.png" alt="Voyeurism">
 				</div>
 
 				<div class="grid-item grid-item--width2">
+					<div class="info-text">
+						<span>Poppies - 2010<br>---<br>acrylic paint on canvas<br>16" x 24"</span>
+					</div>
 					<img src="./images/poppies.png" alt="Poppies">
 				</div>
 
 				<div class="grid-item grid-item--width2">
+					<div class="info-text">
+						<span>Windows (diptych) - 2014<br>---<br>oil paint on canvas<br>36" x 36" each</span>
+					</div>
 					<img src="./images/Windows.png" alt="Windows">
 				</div>
 
 				<div class="grid-item">
+					<div class="info-text">
+						<span>Life Drawing Collage - 2013<br>---<br>mixed media collage on paper<br>24" x 36"</span>
+					</div>
 					<img src="./images/life-collage.png" alt="Life Collage">
 				</div>
 
 				<div class="grid-item grid-item--width2">
+					<div class="info-text">
+						<span>Union Street Aberdeen - 2013<br>---<br>oil paint on canvas<br>30" x 42"</span>
+					</div>
 					<img src="./images/union-street-aberdeen.png" alt="Union Street">
 				</div>
 
 				<div class="grid-item">
-					<img src="./images/vertical-madness-logo.png" alt="Vertical Madness">
+					<div class="info-text">
+						<span>Grapefruits (triptych) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18" each</span>
+					</div>
+					<img src="./images/grapefruits-all.png" alt="Grapefruits (triptych)">
 				</div>
 
 			</div>
 
-			<div id="footnote">
-				<p>&copy; 2015 by Jessica Blue</p>
+			<div class="about-info">
+				<h3>ABOUT</h3>
+				<p>I am an artist and a designer. With a passion for painting and a degree in computer science, I am interested in the integration of art with technology.</p>
 			</div>
+
+			<div class="contact-info">
+				<h3>CONTACT</h3>
+				<p>Send me an email at jessicajanetblue@gmail.com or click the links below to check out my other pages!</p>
+				<ul class="social-links text-center">
+					<li>
+						<a href="https://www.facebook.com/jessicajblue3">
+							<img src="./images/facebook-icon.png" alt:"Facebook" width:"60" height:"60">
+						</a>
+					</li>
+					<li>
+						<a href="https://ca.linkedin.com/pub/jessica-blue/a3/393/5a0">
+							<img src="./images/linkedin.png" alt:"Linked In" width:"60" height:"60">
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/bluej">
+							<img src="./images/github-icon.png" alt:"GitHub" width:"60" height:"60">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!--footnote for copyright information-->
+			<!-- <div id="footnote">
+				<p>&copy; 2015 by Jessica Blue</p>
+			</div> -->
 		</div>
 	</body>
 </html>
