@@ -1,0 +1,33 @@
+.history-section {
+	min-height: 100%;
+	text-align: center;
+	background: #eee;
+	padding-bottom: 20px;
+}
+
+.war-win  { color: green; }
+.war-loss { color: red; }
+.war-tie  { color: black; }
+
+.panel, .panel-heading
+{
+	border-radius: 20px !important;
+}
+
+.panel-default>.panel-heading
+{
+	background-color: white;
+
+}
+
+.panel-default>.panel-heading:hover
+{
+	background-color: #eee;
+	
+}
+
+.panel-body > img
+{
+	width: 100%;
+	margin: 2px;
+}

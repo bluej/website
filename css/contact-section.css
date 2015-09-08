@@ -1,0 +1,29 @@
+.contact-section {
+	min-height: 100%;
+	text-align: center;
+	background: #fff;
+	padding-bottom: 20px;
+}
+
+.social-links {
+	list-style-type: none;
+	text-align: center;
+}
+
+.social-links li {
+	display: inline;
+	padding: 5px;
+
+}
+
+.help-tip {
+	text-align: center;
+	font-family: Hind, sans-serif;
+	font-size: 15px;
+	color:#8c8c8c;
+}
+
+#email {
+	color:#2a2a2a;
+	/*text-decoration: underline;*/
+}

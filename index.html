@@ -1,131 +1,266 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js">
-	<head>
-		<!--Title-->
-		<title>Jessica Blue | artist</title>
-		<!--Favicons-->
-		<link type="image/x-icon" rel="shortcut icon" href="./images/shortcut-icon.ico">
-		<!--CSS-->
-		<link type="text/css" rel="stylesheet" href="./style/css/format.css">
-		<!--Fonts-->
-		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Hind">
-		<!--JS-->
-		<script src="./javascript/masonry.pkgd.js"></script>
-	</head>
+<html lang="en">
 
-	<body>
-		<div id="container">
+<head>
 
-			<div id="header">
-				<h2>JESSICA BLUE | artist</h2>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="An artist portfolio">
+	<meta name="author" content="Jessica Blue">
+
+	<title>Jessica Blue | artist</title>
+
+	<!-- Favicon -->
+	<link type="image/x-icon" rel="shortcut icon" href="./images/shortcut-icon.ico">
+	<!--Fonts-->
+	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Hind">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/scrolling-nav.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/portfolio-section.css" rel="stylesheet">
+	<link href="css/about-section.css" rel="stylesheet">
+	<link href="css/contact-section.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle hidden-md" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand page-scroll" href="#page-top"><font color="#191975">JESSICA BLUE | artist</font></a>
 			</div>
 
-			<div id="navbar">
-				<ul>
-					<li>PORTFOLIO</li>
-					<li>ABOUT</li>
-					<li>CONTACT</li>
-				</ul>
-			</div>
-
-			<!-- Code to change navbar font colour on clock **not currently working -->
-			<script type="text/javascript">
-
-	            $("#navbar li").click( function() { 
-	              $("#navbar li").css("color", "#383838");
-	              $(this).css("color", "##8c8c8c");
-	            });
-
-            </script>
-
-			<!--HMTL initialization of masonry.pkgd.js download for photo collage-->
-			<div class="grid js-masonry" 
-				data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": 200, "percentPosition": true, "gutter": 10, "isFitWidth": true}'>
-
-				<!--grid items as classes for collage-->
-				<!--each item includes reference for images and text information for hover-->
-				<div class="grid-item">
-					<div class="info-text">
-						<span>Ink Sketches - 2013<br>---<br>black ink on paper<br>36" x 36"</span>
-					</div>
-					<img src="./images/ink-sketches.png" alt="Ink Sketches">
-				</div>
-
-				<div class="grid-item grid-item--width2">
-					<div class="info-text">
-						<span>Voyeurism - 2013<br>---<br>oil paint on canvas<br>36" x 48"</span>
-					</div>
-					<img src="./images/Voyeurism.png" alt="Voyeurism">
-				</div>
-
-				<div class="grid-item grid-item--width2">
-					<div class="info-text">
-						<span>Poppies - 2010<br>---<br>acrylic paint on canvas<br>16" x 24"</span>
-					</div>
-					<img src="./images/poppies.png" alt="Poppies">
-				</div>
-
-				<div class="grid-item grid-item--width2">
-					<div class="info-text">
-						<span>Windows (diptych) - 2014<br>---<br>oil paint on canvas<br>36" x 36" each</span>
-					</div>
-					<img src="./images/Windows.png" alt="Windows">
-				</div>
-
-				<div class="grid-item">
-					<div class="info-text">
-						<span>Life Drawing Collage - 2013<br>---<br>mixed media collage on paper<br>24" x 36"</span>
-					</div>
-					<img src="./images/life-collage.png" alt="Life Collage">
-				</div>
-
-				<div class="grid-item grid-item--width2">
-					<div class="info-text">
-						<span>Union Street Aberdeen - 2013<br>---<br>oil paint on canvas<br>30" x 42"</span>
-					</div>
-					<img src="./images/union-street-aberdeen.png" alt="Union Street">
-				</div>
-
-				<div class="grid-item">
-					<div class="info-text">
-						<span>Grapefruits (triptych) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18" each</span>
-					</div>
-					<img src="./images/grapefruits-all.png" alt="Grapefruits (triptych)">
-				</div>
-
-			</div>
-
-			<div class="about-info">
-				<h3>ABOUT</h3>
-				<p>I am an artist and a designer. With a passion for painting and a degree in computer science, I am interested in the integration of art with technology.</p>
-			</div>
-
-			<div class="contact-info">
-				<h3>CONTACT</h3>
-				<p>Send me an email at jessicajanetblue@gmail.com or click the links below to check out my other pages!</p>
-				<ul class="social-links text-center">
-					<li>
-						<a href="https://www.facebook.com/jessicajblue3">
-							<img src="./images/facebook-icon.png" alt:"Facebook" width:"60" height:"60">
-						</a>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse hidden-md pull-right">
+				<ul class="nav navbar-nav">
+					<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+					<li class="hidden">
+						<a class="page-scroll" href="#page-top"></a>
 					</li>
 					<li>
-						<a href="https://ca.linkedin.com/pub/jessica-blue/a3/393/5a0">
-							<img src="./images/linkedin.png" alt:"Linked In" width:"60" height:"60">
-						</a>
+						<a class="page-scroll" href="#portfolio">PORTFOLIO</a>
 					</li>
 					<li>
-						<a href="https://github.com/bluej">
-							<img src="./images/github-icon.png" alt:"GitHub" width:"60" height:"60">
-						</a>
+						<a class="page-scroll" href="#about">ABOUT</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#contact">CONTACT</a>
 					</li>
 				</ul>
 			</div>
-
-			<!--footnote for copyright information-->
-			<!-- <div id="footnote">
-				<p>&copy; 2015 by Jessica Blue</p>
-			</div> -->
 		</div>
-	</body>
+	</nav>
+
+	<!-- Portfolio Section -->
+	<section id="portfolio" class="portfolio-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- <h1 class="title">PORTFOLIO</h1> -->
+					<!--HMTL initialization of masonry.pkgd.js download for photo collage-->
+					<div class="grid js-masonry" 
+						data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": 200, "percentPosition": true, "gutter": 10, "isFitWidth": true}'>
+
+						<!--grid items as classes for collage-->
+						<!--each item includes reference for images and text information for hover-->
+						<div class="grid-item">
+							<div class="info-text">
+								<span>Ink Sketches - 2013<br>---<br>black ink on paper<br>36" x 36"</span>
+							</div>
+							<img src="./images/collage/ink-sketches.png" alt="Ink Sketches">
+						</div>
+
+						<div class="grid-item">
+							<div class="info-text">
+								<span>Skull - 2015<br>---<br>pencil and ink on paper<br>4" x 6"</span>
+							</div>
+							<img src="./images/collage/hex-skull.png" alt="Skull">
+						</div>
+
+						<div class="grid-item grid-item--width2">
+							<div class="info-text">
+								<span>Poppies - 2010<br>---<br>acrylic paint on canvas<br>16" x 24"</span>
+							</div>
+							<img src="./images/collage/poppies.png" alt="Poppies">
+						</div>
+
+						<div class="grid-item grid-item--width2">
+							<div class="info-text">
+								<span>Windows (diptych) - 2014<br>---<br>oil paint on canvas<br>36" x 36" each</span>
+							</div>
+							<img src="./images/collage/Windows.png" alt="Windows">
+						</div>
+
+						<div class="grid-item grid-item--width2">
+							<div class="info-text">
+								<span>Dubrovnik (sketches) - 2015<br>---<br>pencil and ink on paper<br>5" x 6"</span>
+							</div>
+							<img src="./images/collage/dubrovnik.png" alt="Dubrovnik">
+						</div>
+
+						<div class="grid-item">
+							<div class="info-text">
+								<span>Grapefruits (1 of 3) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18"</span>
+							</div>
+							<img src="./images/collage/grapefruits-1.png" alt="Grapefruits (1 of 3)">
+						</div>
+
+						<div class="grid-item">
+							<div class="info-text">
+								<span>Life Drawing Collage - 2013<br>---<br>mixed media collage on paper<br>24" x 36"</span>
+							</div>
+							<img src="./images/collage/life-collage.png" alt="Life Collage">
+						</div>
+
+						<div class="grid-item">
+							<div class="info-text">
+								<span>Grapefruits (2 of 3) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18"</span>
+							</div>
+							<img src="./images/collage/grapefruits-2.png" alt="Grapefruits (2 of 3)">
+						</div>
+
+						<div class="grid-item grid-item--width2">
+							<div class="info-text">
+								<span>Porch of the Caryatids - 2015<br>---<br>pencil and ink on paper<br>5" x 6"</span>
+							</div>
+							<img src="./images/collage/caryatids-porch.png" alt="Porch of the Caryatids">
+						</div>
+
+						<div class="grid-item grid-item--width2">
+							<div class="info-text">
+								<span>Union Street Aberdeen - 2013<br>---<br>oil paint on canvas<br>30" x 42"</span>
+							</div>
+							<img src="./images/collage/union-street-aberdeen.png" alt="Union Street">
+						</div>
+
+						<div class="grid-item grid-item--width2">
+							<div class="info-text">
+								<span>Voyeurism - 2013<br>---<br>oil paint on canvas<br>36" x 48"</span>
+							</div>
+							<img src="./images/collage/Voyeurism.png" alt="Voyeurism">
+						</div>
+
+						<!-- <div class="grid-item">
+							<div class="info-text">
+								<span>Grapefruits (triptych) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18" each</span>
+							</div>
+							<img src="./images/collage/grapefruits-all.png" alt="Grapefruits (triptych)">
+						</div> -->
+
+						<div class="grid-item">
+							<div class="info-text">
+								<span>Grapefruits (3 of 3) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18"</span>
+							</div>
+							<img src="./images/collage/grapefruits-3.png" alt="Grapefruits (3 of 3)">
+						</div>
+
+						<div class="grid-item">
+							<div class="info-text">
+								<span>Hexagon Flowers - 2015<br>---<br>pencil and ink on paper<br>4" x 6"</span>
+							</div>
+							<img src="./images/collage/hex-flowers.png" alt="Hexagon Flowers">
+						</div>
+
+						<div class="grid-item grid-item--width2">
+							<div class="info-text">
+								<span>Highland Sheep - 2015<br>---<br>pencil and ink on paper<br>6" x 8"</span>
+							</div>
+							<img src="./images/collage/highland-sheep.png" alt="Highland Sheep">
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="title"><!-- A LITTLE BIT ABOUT ME --></h3>
+					<img src="./images/head-shot.png" alt="Headshot">
+					<scan class="title">A LITTLE BIT ABOUT ME...<br></scan>
+					<p></p>
+					<p>I am an artist and a designer.</p>
+					<p>With a passion for painting and a degree in computer science, I am interested in the integration of art with technology.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="title"><!-- CONTACT --></h3>
+					<scan class="title">I'D LOVE TO HEAR FROM YOU!</scan>
+					<p></p>
+					<p>Send me an email at <a id="email" 
+						href="mailto:jessicajanetblue@gmail.com">jessicajanetblue@gmail.com</a> 
+						or click the links below to check out my other pages!</p>
+					<ul class="social-links col-lg-12">
+						<li>
+							<a href="https://ca.linkedin.com/pub/jessica-blue/a3/393/5a0">
+								<img src="./images/linkedin.png" alt:"Linked In" width:"60" height:"60">
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/bluej">
+								<img src="./images/github-icon.png" alt:"GitHub" width:"60" height:"60">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/jessicajblue3">
+								<img src="./images/facebook-icon.png" alt:"Facebook" width:"60" height:"60">
+							</a>
+						</li>
+					</ul>
+					<div class="help-tip col-lg-12">
+						<span> (Seriously, click one) </span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<script src="js/myscript.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/scrolling-nav.js"></script>
+
+	<!-- Masonry Photo Collage JavaScript -->
+	<script src="./js/masonry.pkgd.js"></script>
+
+</body>
+
 </html>
