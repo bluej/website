@@ -27,3 +27,8 @@
 	color:#2a2a2a;
 	/*text-decoration: underline;*/
 }
+
+.contact-section p {
+	font-family: Hind, sans-serif;
+	font-size: 20px
+}

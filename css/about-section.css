@@ -9,10 +9,17 @@
 	width: 45%;
 	height: 45%;
 	float: left;
+	padding: 25px;
 }
 
 .title {
 	font-size: 25px;
 	font-family: Hind, sans-serif;
 	color:#191975;
+}
+
+.about-section p {
+	font-size: 20px;
+	font-family: Hind, sans-serif;
+	text-align: left;
 }
