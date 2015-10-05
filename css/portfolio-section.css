@@ -30,7 +30,8 @@
 }
 
 .grid-item img {
-	width:100%;
+	display: block;
+	max-width:100%;
 }
 
 /* Sets the centering and transition information for hover text, initially set to be invisible */
