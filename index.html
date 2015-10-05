@@ -17,40 +17,25 @@
 	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Hind">
 
 	<!-- Bootstrap Core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
-	<link href="css/scrolling-nav.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/portfolio-section.css" rel="stylesheet">
-	<link href="css/about-section.css" rel="stylesheet">
-	<link href="css/contact-section.css" rel="stylesheet">
+	<link href="./css/scrolling-nav.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/portfolio-section.css" rel="stylesheet">
+	<link href="./css/about-section.css" rel="stylesheet">
+	<link href="./css/contact-section.css" rel="stylesheet">
 
 	<!-- jQuery -->
-	<script src="js/jquery.js"></script>
-	<script src="js/myscript.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/myscript.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
 
 	<!-- Scrolling Nav JavaScript -->
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/scrolling-nav.js"></script>
-
-	<!-- Masonry Photo Collage JavaScript -->
-	<script src="./js/masonry.pkgd.js"></script>
-	<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
-	<script src="./js/images-loaded.js"></script>
-
-	<!-- Photo Preloader JavaScript -->
-	<script src="./js/photo-preloader.js"></script>
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	<script src="./js/jquery.easing.min.js"></script>
+	<script src="./js/scrolling-nav.js"></script>
 
 </head>
 
@@ -97,112 +82,137 @@
 			<div class="row">
 				<div class="col-lg-12">
 
-					<!--HMTL initialization of masonry.pkgd.js download for photo collage-->
-					<!-- <div class="grid js-masonry" 
-						data-masonry-options='{ "itemSelector": ".grid-item", "columWidth": 200, "percentPosition": true, "gutter": 10, "isFitWidth": true}'> -->
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
+							<li data-target="#myCarousel" data-slide-to="5"></li>
+							<li data-target="#myCarousel" data-slide-to="6"></li>
+							<li data-target="#myCarousel" data-slide-to="7"></li>
+							<li data-target="#myCarousel" data-slide-to="8"></li>
+							<li data-target="#myCarousel" data-slide-to="9"></li>
+							<li data-target="#myCarousel" data-slide-to="10"></li>
+							<li data-target="#myCarousel" data-slide-to="11"></li>
+							<li data-target="#myCarousel" data-slide-to="12"></li>
+							<li data-target="#myCarousel" data-slide-to="13"></li>
+						</ol>
 
-					<div class="grid js-masonry"
-						<!--grid items as classes for collage-->
-						<!--each item includes reference for images and text information for hover-->
-						<div class="grid-item">
-							<div class="info-text">
-								<span>Ink Sketches - 2013<br>---<br>black ink on paper<br>36" x 36"</span>
-							</div>
-							<img src="./images/collage/ink-sketches.png" alt="Ink Sketches">
-						</div>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+					    	<div class="item active">
+					    		<div class="info-text">					      			
+					        		<span>Ink Sketches - 2013<br>---<br>black ink on paper<br>36" x 36"</span>
+					      		</div>
+					      		<img src="./images/collage/ink-sketches.png" alt="Ink Sketches">
+					    	</div>
 
-						<div class="grid-item">
-							<div class="info-text">
-								<span>Skull - 2015<br>---<br>pencil and ink on paper<br>4" x 6"</span>
-							</div>
-							<img src="./images/collage/hex-skull.png" alt="Skull">
-						</div>
+					    	<div class="item">
+					      		<div class="info-text">
+					        		<span>Skull - 2015<br>---<br>pencil and ink on paper<br>4" x 6"</span>
+					      		</div>
+					      		<img src="./images/collage/hex-skull.png" alt="Skull">
+					    	</div>
 
-						<div class="grid-item grid-item--width2">
-							<div class="info-text">
-								<span>Poppies - 2010<br>---<br>acrylic paint on canvas<br>16" x 24"</span>
-							</div>
-							<img src="./images/collage/poppies.png" alt="Poppies">
-						</div>
+					    	<div class="item">				      		
+					      		<div class="info-text">					      			
+					        		<span>Poppies - 2010<br>---<br>acrylic paint on canvas<br>16" x 24"</span>
+					      		</div>
+					      		<img src="./images/collage/poppies.png" alt="Poppies">
+					    	</div>
 
-						<div class="grid-item grid-item--width2">
-							<div class="info-text">
-								<span>Windows (diptych) - 2014<br>---<br>oil paint on canvas<br>36" x 36" each</span>
-							</div>
-							<img src="./images/collage/Windows.png" alt="Windows">
-						</div>
+					    	<div class="item">					      		
+					      		<div class="info-text">					      			
+					        		<span>Windows (diptych) - 2014<br>---<br>oil paint on canvas<br>36" x 36" each</span>
+					      		</div>
+					      		<img src="./images/collage/Windows.png" alt="Windows">
+					    	</div>
 
-						<div class="grid-item grid-item--width2">
-							<div class="info-text">
-								<span>Dubrovnik (sketches) - 2015<br>---<br>pencil and ink on paper<br>5" x 6"</span>
-							</div>
-							<img src="./images/collage/dubrovnik.png" alt="Dubrovnik">
-						</div>
+					    	<div class="item">					      		
+					      		<div class="info-text">					      			
+					        		<span>Dubrovnik (sketches) - 2015<br>---<br>pencil and ink on paper<br>5" x 6"</span>
+					      		</div>
+					      		<img src="./images/collage/dubrovnik.png" alt="Dubrovnik">
+					    	</div>
 
-						<div class="grid-item">
-							<div class="info-text">
-								<span>Grapefruits (1 of 3) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18"</span>
-							</div>
-							<img src="./images/collage/grapefruits-1.png" alt="Grapefruits (1 of 3)">
-						</div>
+					    	<div class="item">		      		
+					      		<div class="info-text">					      			
+					        		<span>Grapefruits (1 of 3) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18"</span>
+					      		</div>
+					      		<img src="./images/collage/grapefruits-1.png" alt="Grapefruits (1 of 3)">
+					    	</div>
 
-						<div class="grid-item">
-							<div class="info-text">
-								<span>Life Drawing Collage - 2013<br>---<br>mixed media collage on paper<br>24" x 36"</span>
-							</div>
-							<img src="./images/collage/life-collage.png" alt="Life Collage">
-						</div>
+					    	<div class="item">					      	
+					      		<div class="info-text">					      			
+					        		<span>Grapefruits (2 of 3) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18"</span>
+					      		</div>
+					      		<img src="./images/collage/grapefruits-2.png" alt="Grapefruits (2 of 3)">
+					    	</div>
 
-						<div class="grid-item">
-							<div class="info-text">
-								<span>Grapefruits (2 of 3) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18"</span>
-							</div>
-							<img src="./images/collage/grapefruits-2.png" alt="Grapefruits (2 of 3)">
-						</div>
+					    	<div class="item">					      		
+					      		<div class="info-text">					      			
+					        		<span>Grapefruits (3 of 3) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18"</span>
+					      		</div>
+					      		<img src="./images/collage/grapefruits-3.png" alt="Grapefruits (3 of 3)">
+					    	</div>
 
-						<div class="grid-item grid-item--width2">
-							<div class="info-text">
-								<span>Porch of the Caryatids - 2015<br>---<br>pencil and ink on paper<br>5" x 6"</span>
-							</div>
-							<img src="./images/collage/caryatids-porch.png" alt="Porch of the Caryatids">
-						</div>
+					    	<div class="item">					      		
+					      		<div class="info-text">					      			
+					        		<span>Life Drawing Collage - 2013<br>---<br>mixed media collage on paper<br>24" x 36"</span>
+					      		</div>
+					      		<img src="./images/collage/life-collage.png" alt="Life Collage">
+					    	</div>
 
-						<div class="grid-item grid-item--width2">
-							<div class="info-text">
-								<span>Union Street Aberdeen - 2013<br>---<br>oil paint on canvas<br>30" x 42"</span>
-							</div>
-							<img src="./images/collage/union-street-aberdeen.png" alt="Union Street">
-						</div>
+					    	<div class="item">				      		
+					      		<div class="info-text">					      			
+					        		<span>Porch of the Caryatids - 2015<br>---<br>pencil and ink on paper<br>5" x 6"</span>
+					      		</div>
+					      		<img src="./images/collage/caryatids-porch.png" alt="Porch of the Caryatids">
+					    	</div>
 
-						<div class="grid-item grid-item--width2">
-							<div class="info-text">
-								<span>Voyeurism - 2013<br>---<br>oil paint on canvas<br>36" x 48"</span>
-							</div>
-							<img src="./images/collage/Voyeurism.png" alt="Voyeurism">
-						</div>
+					    	<div class="item">				      		
+					      		<div class="info-text">					      			
+					        		<span>Union Street Aberdeen - 2013<br>---<br>oil paint on canvas<br>30" x 42"</span>
+					      		</div>
+					      		<img src="./images/collage/union-street-aberdeen.png" alt="Union Street">
+					    	</div>
 
-						<div class="grid-item">
-							<div class="info-text">
-								<span>Grapefruits (3 of 3) - 2012<br>---<br>acrylic paint on canvas<br>18" x 18"</span>
-							</div>
-							<img src="./images/collage/grapefruits-3.png" alt="Grapefruits (3 of 3)">
-						</div>
+					    	<div class="item">				      		
+					      		<div class="info-text">					      			
+					        		<span>Voyeurism - 2013<br>---<br>oil paint on canvas<br>36" x 48"</span>
+					      		</div>
+					      		<img src="./images/collage/Voyeurism.png" alt="Voyeurism">
+					    	</div>
 
-						<div class="grid-item">
-							<div class="info-text">
-								<span>Hexagon Flowers - 2015<br>---<br>pencil and ink on paper<br>4" x 6"</span>
-							</div>
-							<img src="./images/collage/hex-flowers.png" alt="Hexagon Flowers">
-						</div>
+					    	<div class="item">					      		
+					      		<div class="info-text">					      			
+					        		<span>Hexagon Flowers - 2015<br>---<br>pencil and ink on paper<br>4" x 6"</span>
+					      		</div>
+					      		<img src="./images/collage/hex-flowers.png" alt="Hexagon Flowers">
+					    	</div>
 
-						<div class="grid-item grid-item--width2">
-							<div class="info-text">
-								<span>Highland Sheep - 2015<br>---<br>pencil and ink on paper<br>6" x 8"</span>
-							</div>
-							<img src="./images/collage/highland-sheep.png" alt="Highland Sheep">
-						</div>
-						
+					    	<div class="item">					      		
+					      		<div class="info-text">					      			
+					        		<span>Highland Sheep - 2015<br>---<br>pencil and ink on paper<br>6" x 8"</span>
+					      		</div>
+					      		<img src="./images/collage/highland-sheep.png" alt="Highland Sheep">
+					    	</div>
+					    </div>
+
+					  	<!-- Left and right controls -->
+					  	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					  		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    	<span class="sr-only">Previous</span>
+					  	</a>
+					  	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    	<span class="sr-only">Next</span>
+					  	</a>
 					</div>
+
 				</div>
 			</div>
 		</div>
